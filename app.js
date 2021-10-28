@@ -37,7 +37,8 @@ class Truck extends Vehicle {
     transportContainer() {
         console.log("I am starting transporting heavy container");
     }
-}
+} 
+
 
 let car = new Car("Opel", 2005, 180);
 car.transportPeople();
