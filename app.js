@@ -1,7 +1,7 @@
-import Vehicle from './Vehicle.js';
-import Car from './Car.js';
-import Truck from './Truck.js';
-import Bike from './Bike.js';
+import Vehicle from './vehicle.js';
+import Car from './car.js';
+import Truck from './truck.js';
+import Bike from './bike.js';
 
 let car = new Car("Opel", 2005, 180);
 car.transportPeople();
