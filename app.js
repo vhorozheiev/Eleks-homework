@@ -14,4 +14,4 @@ truck.transportContainer();
 truck.displayInfo(); // call father's method
 
 let bike = new Bike("Honda", 2010, 240);
-bike.showMaxSpeed();
+bike.showMaxSpeed(); //call method from class
