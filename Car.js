@@ -12,7 +12,7 @@ export default class Car extends Vehicle {
         this.color = color;
         console.log(`Color: ${this.color}`);
     }
-
+    //override method
     displayInfo() {
         console.log(`Name: ${this.model}; Year: ${this.year}; Max Speed: ${this.maxSpeed}; Color: ${this.color}`);
     }

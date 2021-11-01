@@ -5,7 +5,6 @@ export default class Bike extends Vehicle {
         super(carModel, carYear, maxSpeed);
         this.type = "bike";
     }
-
     showMaxSpeed(){
         console.log(`Max speed: ${this.maxSpeed}`);
     }

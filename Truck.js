@@ -5,7 +5,6 @@ export default class Truck extends Vehicle {
         super(carModel, carYear, maxSpeed);
         this.type = "truck";
     }
-
     transportContainer() {
         console.log("I am starting transporting heavy container");
     }
