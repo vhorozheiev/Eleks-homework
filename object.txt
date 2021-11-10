@@ -1,1 +1,0 @@
-{"name":"Rhoda","surname":"King","rate":48}
