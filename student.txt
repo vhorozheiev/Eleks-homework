@@ -1,0 +1,1 @@
+{"name":"Lizzie","surname":"Powers","rate":75}{"name":"jonh","surname":"doe","rate":100,"course":3}
