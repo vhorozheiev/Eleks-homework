@@ -1,8 +1,7 @@
-import Mocha from "mocha";
-import chai from "chai";
-
 function calculator(firstNum, secondNum, operation) {
-  if ((typeof firstNum == "number") & (typeof secondNum == "number")) {
+  if (!isNaN(firstNum) & !isNaN(secondNum)) {
+      firstNum = Number(firstNum);
+      secondNum = Number(secondNum);
     if (operation == "+") {
       return firstNum + secondNum;
     } else if (operation == "*") {
