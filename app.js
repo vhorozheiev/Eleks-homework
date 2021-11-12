@@ -15,7 +15,7 @@ function calculator(firstNum, secondNum, operation) {
         return firstNum / secondNum;
       }
     } else {
-      throw new Error("opppss!!! smth wrong");
+      throw new Error("Opppss!!!smt wrong");
     }
   } else {
     throw new Error("Please, enter just numbers");

@@ -2,6 +2,7 @@ import { calculator } from "../app.js";
 import { expect } from "chai";
 
 describe("function call 'calculator'", function () {
+  
   //addition
   describe("addition operation", function () {
     it("2 + 2 = 4 ", function () {
@@ -48,7 +49,7 @@ describe("function call 'calculator'", function () {
     });
   });
 
-  //error
+  //division by zero
   describe("division by 0", function () {
     it("write second number - 0 in division operation", function () {
       expect(() => calculator(10, 0, "/")).to.throw();
