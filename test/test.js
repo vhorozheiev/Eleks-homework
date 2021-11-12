@@ -1,10 +1,6 @@
 import { calculator } from "../app.js";
 import { expect } from "chai";
 
-var badFn = function () { throw new TypeError('Illegal salmon!'); };
-
-expect(badFn).to.throw();
-
 describe("function call 'calculator'", function () {
   //addition
   describe("addition operation", function () {
