@@ -18,11 +18,6 @@ describe("function call 'calculator'", function () {
       expect(calculator(2, -10, "+")).to.be.equal(-8);
     });
   });
-  describe("addition operation", function () {
-    it("'2' + 2 = 4 ", function () {
-      expect(calculator("2", 2, "+")).to.be.equal(4);
-    });
-  });
 
   //multiply
   describe("multiply operation", function () {
@@ -55,8 +50,8 @@ describe("function call 'calculator'", function () {
 
   //error
   describe("division by 0", function () {
-    it("10 / 0 ", function () {
-      expect(calculator(10, 0, "/")).to.throw("division by 0");
+    it("write second number - 0 in division operation", function () {
+      expect(() => calculator(10, 0, "/")).to.throw();
     });
   });
 
@@ -81,8 +76,20 @@ describe("function call 'calculator'", function () {
   //incorrect data
   //error
   describe("incorrect input data", function () {
-    it("write string like a firstNum", function () {
-      expect(calculator("asd", 3, "-")).to.throw(error);
+    it("write incorrect first number like some string", function () {
+      expect(() => calculator("asd", 3, "-")).to.throw();
+    });
+  });
+
+  describe("incorrect input data", function () {
+    it("write incorrect second number like some string", function () {
+      expect(() => calculator(4, "ada", "-")).to.throw();
+    });
+  });
+
+  describe("incorrect input data", function () {
+    it("write first number like a string - '2' + 2 = 4", function () {
+      expect(calculator("2", 2, "+")).to.be.equal(4);
     });
   });
 });
