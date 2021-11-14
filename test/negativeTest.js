@@ -20,36 +20,21 @@ describe("function call 'calculator'", function () {
       expect(calculator("2", 2, "+")).to.be.equal(4);
     });
   });
+  describe("incorrect input data", function () {
+    it("write second number like a string - '2' + 2 = 4", function () {
+      expect(calculator(2, "2", "+")).to.be.equal(4);
+    });
+  });
+
+  describe("incorrect input data", function () {
+    it("enter just a one number", function () {
+      expect(() => calculator("2", "+")).to.throw();
+    });
+  });
   //division by zero
   describe("division by 0", function () {
     it("write second number - 0 in division operation", function () {
       expect(() => calculator(10, 0, "/")).to.throw();
-    });
-  });
-  //incorrect result
-
-  //addition
-  describe("addition operation", function () {
-    it("2 + 2 = 4 ", function () {
-      expect(calculator(2, 2, "+")).to.be.equal(5);
-    });
-  });
-  //multiply
-  describe("multiply operation", function () {
-    it("2 * 3 = 6 ", function () {
-      expect(calculator(2, 3, "*")).to.be.equal(10);
-    });
-  });
-  //division
-  describe("division operation", function () {
-    it("10 / 5 = 2 ", function () {
-      expect(calculator(10, 5, "/")).to.be.equal(3);
-    });
-  });
-   //subtract
-   describe("subtract operation", function () {
-    it("8 - 3 = 5 ", function () {
-      expect(calculator(8, 3, "-")).to.be.equal(6);
     });
   });
 });

@@ -48,6 +48,11 @@ describe("function call 'calculator'", function () {
       expect(calculator(10, -5, "/")).to.be.equal(-2);
     });
   });
+  describe("division operation", function () {
+    it("0 / 5 = 0 ", function () {
+      expect(calculator(0, 5, "/")).to.be.equal(0);
+    });
+  });
 
   //subtract
   describe("subtract operation", function () {
@@ -55,7 +60,6 @@ describe("function call 'calculator'", function () {
       expect(calculator(8, 3, "-")).to.be.equal(5);
     });
   });
-
   describe("subtract operation", function () {
     it("-8 - (-3) = 5 ", function () {
       expect(calculator(-8, -3, "-")).to.be.equal(-5);
